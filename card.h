@@ -1,5 +1,5 @@
 #ifndef __CARD__
-#define __GAME__
+#define __CARD__
 
 struct card_t
     {
