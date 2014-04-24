@@ -20,7 +20,7 @@
 		printf("mana: %d", pool.mana_now);
 		} 	
 	
-		else printf("NEMA MANA, BACE! KRIZA E!\n");
+		else printf("NEMA MANA, BACE!KRIZICHKATA NI UDARI!\n");
 
 		return 0;
 	}
