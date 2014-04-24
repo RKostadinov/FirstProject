@@ -6,7 +6,7 @@
 	{
 
 		struct manapool_t pool;
-		struct card_t card = {"Hineca", 6, 7, 7};
+		struct card_t card_to_push = {"PESHO", 6, 8, 2};
 
 		manapool_create(&pool);
 		printf("mana: %d\n", pool.mana_now);
