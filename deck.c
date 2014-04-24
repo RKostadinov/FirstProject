@@ -1,4 +1,3 @@
-
 #include  “deck.h”
 #include <stdio.h>
 
@@ -9,7 +8,7 @@ if (player_deck - > top <= 30)
     player_deck->card[player_deck->top++] = card_to_push; 
     return 1;
 }
-else { printf(“Error: Deck is full! ”);
+else { printf("Error: Deck is full! ");
 }
 
 
@@ -19,7 +18,7 @@ int draw_card(struct deck_t *player_deck, struct card_t *card)
         {
              *card = player_deck->card[--player_deck->top]    ;
 }
-        else printf (“Error: Deck is empty!”);
+        else printf ("Error: Deck is empty!");
 }
 
 
@@ -29,6 +28,6 @@ int look_card(struct deck_t player_deck, struct card_t *card_return)
 {
             *card_return = player_deck.card[--player_deck.top];
             return 1;
-        } else  printf (“Error: Deck is empty!”);
+        } else  printf ("Error: Deck is empty!");
 }
 
