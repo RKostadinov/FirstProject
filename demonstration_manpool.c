@@ -6,18 +6,18 @@
 	{
 
 		struct manapool_t pool;
-		struct card_t card = {"Hineca", 6, 7, 7};
+		struct card_t card_to_push = {"Pesho", 6, 8, 5};
 
 		manapool_create(&pool);
 		printf("mana: %d\n", pool.mana_now);
 
 		mana_push(&pool, 75);
-		printf("mana: %d", pool.mana_now);
+		printf("mana: %d\n", pool.mana_now);
 
 		if(can_put_card(card_to_push, pool)) 
 		{
 		mana_get(&pool, card_to_push.mana);
-		printf("mana: %d", pool.mana_now);
+		printf("mana: %d\n", pool.mana_now);
 		} 	
 	
 		else printf("NEMA MANA, BACE! KRIZA E!\n");
