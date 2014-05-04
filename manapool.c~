@@ -26,4 +26,8 @@ int can_put_card(struct card_t card_to_put, struct manapool_t pool)
         return 0;
 }
 
+<<<<<<< HEAD
+=======
 
+
+>>>>>>> 49ddd842b7c73dc616b2a2dec111e403c12f1b9f
