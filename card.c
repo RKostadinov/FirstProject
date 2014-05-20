@@ -3,8 +3,6 @@
 
     int attack(struct card_t *attacker, struct card_t *defender)
     {
-  
-
         if (((defender -> hp) - (attacker -> damage) > 0) && ((attacker -> hp)-(defender -> damage)>0))
         {
     (attacker -> hp -= defender -> damage);
@@ -31,5 +29,5 @@
     (defender -> hp -= attacker -> damage);
             return 2;
         }
-
-    }        
+        return 42;
+    }  

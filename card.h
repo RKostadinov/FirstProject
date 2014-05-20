@@ -3,7 +3,7 @@
 
 struct card_t
     {
-        char name[50];
+        char *name;
         int damage;
         int hp;
         int mana;
