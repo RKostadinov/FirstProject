@@ -6,6 +6,7 @@
 
 struct manapool_t
 {
+        
 	int mana_now;
 };
 

@@ -3,7 +3,7 @@
 
 void manapool_create(struct manapool_t *pool)
 {
-	pool -> mana_now = 1; 
+	pool -> mana_now = 0; 
 }
 
 int mana_push (struct manapool_t *pool, int add)

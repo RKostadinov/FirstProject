@@ -1,5 +1,5 @@
 #include "card.h"
-
+#include <stdio.h>
 
     int attack(struct card_t *attacker, struct card_t *defender)
     {
@@ -29,5 +29,10 @@
     (defender -> hp -= attacker -> damage);
             return 2;
         }
-        return 42;
+        
     }  
+
+    void print_card(struct card_t card)
+    {
+        printf("%d|%d(%d)", card.damage, card.hp, card.mana);
+    }

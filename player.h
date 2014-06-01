@@ -3,7 +3,7 @@
 #include "deck.h"
 #include "manapool.h"
 
-struct player_t {
+struct player_t{
 	char *name;
         int hp;
 	struct deck_t deck;
@@ -16,5 +16,6 @@ void init_player(struct player_t *player);
 void turn_begin(struct player_t *player);
 int change_hp(struct player_t *player, int hp);
 void print_hand(struct player_t *pl);
+void print_player(struct player_t player);
 #endif
 
