@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "board.h"
 #include <string.h>
-#define DEBUG printf(":)\n");
+
 
 //Inits the board.All cards stats are set to zero.
 void init_board(struct board_t *board)
