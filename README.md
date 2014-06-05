@@ -1,4 +1,0 @@
-FirstProject
-============
-
-ELSYS  - CARD WARS

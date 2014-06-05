@@ -1,24 +1,30 @@
 #include  "deck.h"
 #include <stdio.h>
-
+//Initialises the deck. Top = 0.
     void init_deck(struct deck_t *player_deck)
 {
 	player_deck->top = 0;
 }
+//Initialises hand cards. Top())
+    void init_hand_cards(struct hand_t *player_hand) 
+{
+    player_hand->top = 0;
+}
 
+//Pushes the selected card into the player`s deck.
     int push_card(struct card_t card_to_push, struct deck_t *player_deck)
 {
         if (player_deck -> top <= 30)
-{ 
+    { 
     player_deck->card[player_deck->top++] = card_to_push; 
     return 1;
-}
+    }
 else printf("Error: Deck is full! ");
         return 0;
     
-    }
+}
 
-
+//Pops a card from deck(stack) and puts it in the player`s hand. Top(deck) -=1. Top(hand) += 1.
 int draw_card(struct deck_t *deck, struct hand_t *hand)
 {
         if (deck->top > 0)
@@ -30,7 +36,7 @@ int draw_card(struct deck_t *deck, struct hand_t *hand)
         else return 0;
 }
 
-
+//Printing the elements of the card without removing it from the deck(stack)
 int look_card(struct deck_t *player_deck)
 {
         if(player_deck->top > 0) 
@@ -50,9 +56,4 @@ int look_card(struct deck_t *player_deck)
             return 0;
         }
         
-}
-
-void init_hand_cards(struct hand_t *player_hand) 
-{
-    player_hand->top = 0;
 }

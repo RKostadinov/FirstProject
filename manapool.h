@@ -17,4 +17,3 @@ void manapool_create(struct manapool_t *pool);
 
 #endif
 
-

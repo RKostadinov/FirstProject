@@ -18,9 +18,12 @@ int play_card(struct board_t *board, int player, int card, int num_lane);
 
 void turn_end(struct board_t *board, int player);
 
-void print_board(struct board_t *board, struct player_t player, int turn);
+void print_board(struct board_t *board);
 
+int load_deck(struct board_t *board, char *filename);
 
+void special_effect(struct board_t *board, int card);
+
+void game_start(struct board_t *board);
 
 #endif
-
