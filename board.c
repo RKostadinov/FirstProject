@@ -109,7 +109,7 @@ int load_deck(struct board_t *board, char* file) {
 
 
 
-//                  SPECIAL EFFECT
+//                  SPECIAL EFFECT - Radoslav
 //                  Project for magic cards;
 void special_effect(struct board_t *board, int card)
 {
