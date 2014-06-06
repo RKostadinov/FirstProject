@@ -14,7 +14,7 @@
 //Pushes the selected card into the player`s deck.
     int push_card(struct card_t card_to_push, struct deck_t *player_deck)
 {
-        if (player_deck -> top <= 30)
+        if (player_deck -> top < 30)
     { 
     player_deck->card[player_deck->top++] = card_to_push; 
     return 1;
