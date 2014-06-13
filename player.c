@@ -18,7 +18,7 @@ int change_hp(struct player_t *player, int hp)
 	if (player -> hp  < 0) player -> hp = 0;
         return 0;
 }
-//Puts a card from hand to 
+//Puts a card from hand to. Reorders hand cards.
 struct card_t play_card_from_hand (struct player_t *player, int card)
 {
     int i;
